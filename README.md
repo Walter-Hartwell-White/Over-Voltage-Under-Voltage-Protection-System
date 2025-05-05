@@ -101,8 +101,8 @@ There will be a garbage voltage reading when the power is off, it is due to the 
 
 ## 👥 Contributors
 
-- **Walter Hartwell White** ([@Walter-Hartwell-White](https://github.com/Walter-Hartwell-White)) - Development and Core Contributor 
-- **[Abhishek Sreesukan]** - Project Design & Circuit Implementation
+- **Walter Hartwell White** ([@Walter-Hartwell-White](https://github.com/Walter-Hartwell-White)) - Development & Core Contributor 
+- **Abhishek Sreesukan** - Project Design, Circuit Implementation & Project Lead
 
 ---
 
