@@ -49,9 +49,7 @@ This project implements an Over Voltage Under Voltage Protection System using an
 
 *Check out the demo video below to see the system in action!*
 
-
-[Demo Video](demo/IMG_1395.MOV)
-
+https://github.com/user-attachments/assets/b5b5eaec-4868-4674-94f3-4b363e281a56
 
 ---
 
