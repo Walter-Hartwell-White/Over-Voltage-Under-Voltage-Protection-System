@@ -41,7 +41,7 @@ This project implements an Over Voltage Under Voltage Protection System using an
    - `LiquidCrystal` (install via Library Manager)
 
 3. **Upload the Code:**  
-   Use the Arduino IDE to upload [`main.ino`](OV_UV_Protection_System) to your ESP32.
+   Use the Arduino IDE to upload [`main.ino`](main/main.ino) to your ESP32.
 
 ---
 
@@ -57,7 +57,7 @@ This project implements an Over Voltage Under Voltage Protection System using an
 
 ## 📄 Source Code
 
-See [`main.ino`](OV_UV_Protection_System.ino) for the complete Arduino code.
+See [`main.ino`](main/main.ino) for the complete Arduino code.
 
 ---
 
