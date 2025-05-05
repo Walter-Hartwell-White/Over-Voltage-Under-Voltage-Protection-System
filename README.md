@@ -18,7 +18,7 @@ This project implements an Over Voltage Under Voltage Protection System using an
 
 - **ESP32 Development Board**
 - **ZMPT101B AC Voltage Sensor**
-- **16x2 LCD Display (parallel interface)**
+- **16x2 LCD Display(Without I2C) (parallel interface)**
 - **Relay Module (for tripping the device)**
 - **AC Load (e.g., lamp, fan, etc.)**
 - **Wires and Breadboard/PCB**
@@ -60,6 +60,44 @@ This project implements an Over Voltage Under Voltage Protection System using an
 See [`main.ino`](OV_UV_Protection_System.ino) for the complete Arduino code.
 
 ---
+
+## 🛠️ Troubleshooting
+
+### 1. LCD Not Displaying Text
+
+- **Check Wiring:** Ensure all LCD pins are correctly connected to the ESP32 as per the code.
+- **Contrast:** Adjust the potentiometer (if used) for contrast.
+- **Initialization:** Confirm `lcd.begin(16, 2);` is in `setup()`.
+- **Blog:** Here is a blog which helped me solving this issue. See[`blog`](https://diyprojectslabs.com/interfacing-zmpt101b-voltage-sensor-with-esp32/)
+
+### 2. No Voltage Reading / Always 0V
+
+- **Sensor Wiring:** Make sure the ZMPT101B sensor's output is connected to the correct analog pin (27 by default).
+- **Sensitivity:** Try adjusting the `SENSITIVITY` value in code for your sensor.
+- **Calibration:** Double-check the `CALIBRATION_FACTOR` or adjust based on your AC supply. In India the Frequency for AC Input is 50 Hz and I have set the Callibration according to 220V AC.
+
+### 3. Relay Not Switching
+
+- **Pin Definition:** Ensure `RELAY_PIN` in code matches your actual relay pin.
+- **Relay Wiring:** Confirm relay VCC and GND connections; some relay modules require external power.
+- **Relay Type:** If using a 5V relay, ensure it is compatible with ESP32's output logic level.
+
+### 4. Serial Monitor Shows Garbage Values
+
+- **Baud Rate:** Set Serial Monitor to 115200 baud.
+- **Wiring:** Avoid cross-talk between LCD and Serial pins.
+
+### 5. Device Does Not Trip on Over/Under Voltage
+
+- **Thresholds:** Verify `OVER_VOLTAGE` and `UNDER_VOLTAGE` constants in code match your requirements.
+- **Sensor Output:** Use Serial Monitor to confirm voltage readings are accurate.
+
+### 6. Interfacing ZMPT101B Voltage Sensor with ESP32
+- **Blog:** Here is a blog which helped me solve how to interface ZMPT101B sensor with ESP32. After this i got the perfect reading.See[`blog`](https://diyprojectslabs.com/interfacing-zmpt101b-voltage-sensor-with-esp32/)
+
+There will be a garbage voltage reading when the power is off, it is due to the Induced/Ghost Voltage.  
+---
+
 
 ## 👥 Contributors
 
