@@ -66,13 +66,14 @@ See [`main.ino`](main/main.ino) for the complete Arduino code.
 - **Check Wiring:** Ensure all LCD pins are correctly connected to the ESP32 as per the code.
 - **Contrast:** Adjust the potentiometer (if used) for contrast.
 - **Initialization:** Confirm `lcd.begin(16, 2);` is in `setup()`.
-- **Blog:** Here is a blog which helped me solving this issue. See[`blog`](https://diyprojectslabs.com/interfacing-zmpt101b-voltage-sensor-with-esp32/)
+- **Blog:** Here is a blog which helped me solving this issue. See[`blog`]([https://diyprojectslabs.com/interfacing-zmpt101b-voltage-sensor-with-esp32/](https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/#google_vignette))
 
 ### 2. No Voltage Reading / Always 0V
 
 - **Sensor Wiring:** Make sure the ZMPT101B sensor's output is connected to the correct analog pin (27 by default).
 - **Sensitivity:** Try adjusting the `SENSITIVITY` value in code for your sensor.
 - **Calibration:** Double-check the `CALIBRATION_FACTOR` or adjust based on your AC supply. In India the Frequency for AC Input is 50 Hz and I have set the Callibration according to 220V AC.
+- **Blog:** Here is a blog which helped me solving this issue. See[`blog`]([https://diyprojectslabs.com/interfacing-zmpt101b-voltage-sensor-with-esp32/)
 
 ### 3. Relay Not Switching
 
