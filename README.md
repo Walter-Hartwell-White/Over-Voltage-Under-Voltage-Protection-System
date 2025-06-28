@@ -66,7 +66,7 @@ See [`main.ino`](main/main.ino) for the complete Arduino code.
 - **Check Wiring:** Ensure all LCD pins are correctly connected to the ESP32 as per the code.
 - **Contrast:** Adjust the potentiometer (if used) for contrast.
 - **Initialization:** Confirm `lcd.begin(16, 2);` is in `setup()`.
-- **Blog:** Here is a blog which helped me solving this issue. See[`blog`](https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/))
+- **Blog:** Here is a blog which helped me solving this issue. See[`blog`](https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/)
 
 ### 2. No Voltage Reading / Always 0V
 
